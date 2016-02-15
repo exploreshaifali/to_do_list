@@ -4,5 +4,6 @@ from lists.views import home_page
 
 
 urlpatterns = [
-    url(r'^$', home_page, name='home')
+    url(r'^$', home_page, name='home'),
+    url(r'^drop/$', 'lists.views.drop', name='drop'),
 ]
